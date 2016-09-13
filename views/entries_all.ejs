@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>LeaderBoard_all</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+
+  <h1>All Scores</h1>
+
+  <p>
+    <a href="/LeaderBoard/new">Add a new Score</a>
+  </p>
+
+  <div class="Score">
+    <% for (var i = 0; i < products.length; i++) { %>
+      <% var product = products[i]; %>
+      <div class="product">
+        <a href="/products/<%= product.id %>">
+          <%= product.name %>
+        </a>
+      </div>
+      <% } %>
+    </div>
+
+
+  </body>
+  </html>
